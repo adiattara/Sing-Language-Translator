@@ -1,0 +1,5 @@
+#!/bin/bash
+export AWS_ACCESS_KEY_ID=""
+export AWS_SECRET_ACCESS_KEY=""
+
+echo "Les variables d'environnement pour les clés d'accès AWS ont été définies."
