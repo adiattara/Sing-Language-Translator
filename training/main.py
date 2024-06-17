@@ -122,7 +122,7 @@ if __name__ =='__main__':
     val_dataset = val_dataset.batch(batch_size=64, drop_remainder=True)
 
     # Entraîner le modèle en utilisant les callbacks
-    model1.fit(train_dataset, epochs=25, validation_data=val_dataset, batch_size=64, callbacks=callbacks)
+    model1.fit(train_dataset, epochs=100, validation_data=val_dataset, batch_size=64, callbacks=callbacks)
 
     saved_model_dir='../model_asl'
     tf.saved_model.save(model1, saved_model_dir)
